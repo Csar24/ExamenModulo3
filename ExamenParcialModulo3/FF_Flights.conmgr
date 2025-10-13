@@ -1,0 +1,570 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:DelayValidation="True"
+  DTS:ObjectName="FF_Flights"
+  DTS:DTSID="{F4A1A2CB-9920-44E4-8774-2413689D47CA}"
+  DTS:CreationName="FLATFILE">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:Format="Delimited"
+      DTS:LocaleID="1033"
+      DTS:HeaderRowDelimiter="_x000D__x000A_"
+      DTS:ColumnNamesInFirstDataRow="True"
+      DTS:RowDelimiter=""
+      DTS:TextQualifier="_x003C_none_x003E_"
+      DTS:CodePage="1252"
+      DTS:ConnectionString="C:\para-vola\data\raw\flights\2018\Combined_Flights_2018.csv">
+      <DTS:FlatFileColumns>
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="50"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="FlightDate"
+          DTS:DTSID="{28D9D6AE-27D9-44BA-B302-F5E46609C6D1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Airline"
+          DTS:DTSID="{88A48EFD-AF22-4C10-B0CC-2041C391F5A2}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Origin"
+          DTS:DTSID="{AE09F969-7018-4171-BD56-4F1E85395289}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Dest"
+          DTS:DTSID="{D86A1452-C5F7-4739-915F-A0A5CEF8CBE9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Cancelled"
+          DTS:DTSID="{C9D195D0-E82B-4A84-82DB-D44D80D50476}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Diverted"
+          DTS:DTSID="{3EAA1CD7-388A-42BE-BE7D-6B3C294B9C0D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CRSDepTime"
+          DTS:DTSID="{0B61C592-8098-4D4E-A360-053BBE714B4E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DepTime"
+          DTS:DTSID="{22DC8B17-E054-4A09-B43E-63D898C2C1AE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DepDelayMinutes"
+          DTS:DTSID="{B206C1C6-056B-41BE-8EAD-2CB43748E8AE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DepDelay"
+          DTS:DTSID="{BE17966E-A174-4E1E-8F68-FE95BF5AFB86}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ArrTime"
+          DTS:DTSID="{A86F56A0-18E5-4063-8BB9-43C257AB96A3}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ArrDelayMinutes"
+          DTS:DTSID="{8805292F-3E70-45CB-A133-511A5D2859F9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="AirTime"
+          DTS:DTSID="{A9C3E89C-7AC1-4801-B8A8-C5AB7B50940F}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CRSElapsedTime"
+          DTS:DTSID="{93254C07-7782-41D6-8676-FDC941DC2DDE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ActualElapsedTime"
+          DTS:DTSID="{E9C6AAE3-5371-4798-93A2-BF074C486F5D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Distance"
+          DTS:DTSID="{B262C7EB-651C-4870-9C46-90217767BE54}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Year"
+          DTS:DTSID="{64AF766D-0475-46B0-9D2E-05DD3423719D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Quarter"
+          DTS:DTSID="{2006AF45-ED6E-403E-8675-D100EE9E47D0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Month"
+          DTS:DTSID="{9EC13226-5B18-47C4-AA3F-1C769316D38B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DayofMonth"
+          DTS:DTSID="{42B69C01-D8F5-4E90-B51F-EDD125CB4C3B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DayOfWeek"
+          DTS:DTSID="{8729F178-ADF2-4120-A09C-D2DA0D46EB1A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Marketing_Airline_Network"
+          DTS:DTSID="{0759CDDB-5597-4473-8AC7-819319F14B71}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Operated_or_Branded_Code_Share_Partners"
+          DTS:DTSID="{58F6B690-BBC8-48A9-A46D-5F097EC5CC33}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DOT_ID_Marketing_Airline"
+          DTS:DTSID="{DD695CD9-B2B9-480A-A705-21E5D6AEB023}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="IATA_Code_Marketing_Airline"
+          DTS:DTSID="{667F3C1E-42DB-40D7-BF28-FC1FC14B3B09}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Flight_Number_Marketing_Airline"
+          DTS:DTSID="{C411A193-5C0B-42D6-9D22-272C9F4A0501}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Operating_Airline"
+          DTS:DTSID="{6E7DBACF-E290-4A87-B018-BF640552D6BE}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DOT_ID_Operating_Airline"
+          DTS:DTSID="{E6669681-AE6F-4E26-99C7-4E9E23EC138A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="IATA_Code_Operating_Airline"
+          DTS:DTSID="{A3F01105-4B44-48EF-B711-5CA09E0C66A7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Tail_Number"
+          DTS:DTSID="{F39C7615-E258-4B0D-AE9E-EF8518936D1B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="Flight_Number_Operating_Airline"
+          DTS:DTSID="{D85D1CF6-64B1-4C98-9A77-86522FC62643}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OriginAirportID"
+          DTS:DTSID="{C271C13E-7E52-4378-A839-1C7934CB2EFD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OriginAirportSeqID"
+          DTS:DTSID="{47514D86-F309-4682-A208-B3389A5F6E38}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OriginCityMarketID"
+          DTS:DTSID="{90566660-418B-439F-90EA-6DC8426CF1D9}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OriginCityName"
+          DTS:DTSID="{1C8610A1-98E1-4C7D-9B49-3C1E9B4E38CF}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OriginState"
+          DTS:DTSID="{75D6EAC1-9625-4F11-A25C-0C99CF7F8F15}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OriginStateFips"
+          DTS:DTSID="{659D80FC-E89D-4B1B-BDF6-6109D4A3C060}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OriginStateName"
+          DTS:DTSID="{7329E14A-D43B-4377-BD8F-00182B9ECD0B}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="OriginWac"
+          DTS:DTSID="{B33D561D-AE72-459A-B4FC-A043223E8BF0}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DestAirportID"
+          DTS:DTSID="{924348FD-045B-4E8F-BD06-D1B2ED3BFE06}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DestAirportSeqID"
+          DTS:DTSID="{012F18FC-C965-4A89-A513-5F243B8A1508}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DestCityMarketID"
+          DTS:DTSID="{80BE7364-4B72-4503-932D-DE16C247D759}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DestCityName"
+          DTS:DTSID="{C7A9DD86-DA4D-4B58-A266-24BB0052A458}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DestState"
+          DTS:DTSID="{99F2A0B9-D69B-40C0-BBBE-B207F94F5FDD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DestStateFips"
+          DTS:DTSID="{0B7B21F2-1FA1-4624-B976-BD579EF05983}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DestStateName"
+          DTS:DTSID="{1D26B968-D0AF-40EA-863C-50DF48E7F315}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DestWac"
+          DTS:DTSID="{C34A0E06-7055-4EE1-BD0B-E0AF49DA46FA}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DepDel15"
+          DTS:DTSID="{FEE29A76-8EA8-4088-B924-595EE0424BE1}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DepartureDelayGroups"
+          DTS:DTSID="{AC400707-45AD-47C6-8D94-77BBCE76E683}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DepTimeBlk"
+          DTS:DTSID="{A6489799-96A5-4825-B238-7CF6065F3D9E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="TaxiOut"
+          DTS:DTSID="{BF8CF4B4-591F-46CB-9C54-706C6E3A9E6D}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="WheelsOff"
+          DTS:DTSID="{19FA3857-8064-4223-9490-BB374C82039A}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="WheelsOn"
+          DTS:DTSID="{D0232BEB-0012-4DEA-933A-D8F26E06039C}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="TaxiIn"
+          DTS:DTSID="{12FFDCFE-4606-497D-B66F-070A4E2BF25E}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="CRSArrTime"
+          DTS:DTSID="{0D9F08F1-42BA-400C-A99D-60168E2D3979}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ArrDelay"
+          DTS:DTSID="{0AC823C3-7DD6-44D6-B713-70F57F4CB099}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ArrDel15"
+          DTS:DTSID="{15E770C1-2854-4FF1-9010-C9976C09BACD}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ArrivalDelayGroups"
+          DTS:DTSID="{F0B676E3-D32C-4618-A370-2F5692042A27}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="ArrTimeBlk"
+          DTS:DTSID="{9CB4559C-7B1E-4820-86D2-972C74471C02}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x002C_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DistanceGroup"
+          DTS:DTSID="{1A6B5CEF-CD97-4BC7-883F-951C9C649EA7}"
+          DTS:CreationName="" />
+        <DTS:FlatFileColumn
+          DTS:ColumnType="Delimited"
+          DTS:ColumnDelimiter="_x000A_"
+          DTS:MaximumWidth="200"
+          DTS:DataType="129"
+          DTS:TextQualified="True"
+          DTS:ObjectName="DivAirportLandings"
+          DTS:DTSID="{EB21FE7C-21F3-4937-AC1E-DDB3CD1EBEFC}"
+          DTS:CreationName="" />
+      </DTS:FlatFileColumns>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
