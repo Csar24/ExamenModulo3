@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">DESKTOP-K20S8TH</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPdcukB2kA0ifU83Q3dprnQAAAAACAAAAAAAQZgAAAAEAACAAAAApoteG+USsJ9nvWaTu5GoJ4R2Pad61yKCTTcpwyeFVFAAAAAAOgAAAAAIAACAAAABSy4X9Zsyne8px4ODz7LQHpboa8/V0AckvjO9A8xO0fpAAAAC6ymx/Z7nG4/RaIGb4Mur3fqGDy3U5LX9x3qnwGKffyxRNTPHsS3A95Xqn7ID3yAKfXhbDtWKGHs2UbtaUhKladUUX73iKspZDBqJX0A6v6sVpD5l2fqyFAewsqF2T4TlqREUWbJ0FZ1ziBM4rDd8GV2Wlo8ac64lGg0aUEXewJh0uWDsYdqAAKh8ZbD6OyT1AAAAAQdl4Y7gRfVv506Lu1ErmIdAiSB/fJvjy6UKGpwiJFiRiAm6cD2CM61BXSviI8JY83H5aoGqZGse6In5wcFMoQg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAPdcukB2kA0ifU83Q3dprnQAAAAACAAAAAAAQZgAAAAEAACAAAAApf0jifZWwd3oH/wABaFl0cCHoMir7koFCPg+KePN7ZgAAAAAOgAAAAAIAACAAAAB+QWXsEq9b7oqb5hPMH6Ti4SShh4aDRnm0+TgCteoQhJAAAAAlljoBbKiGa7ogfkJg0JjmMk+uVsB3pd/5fEgSSmEl5BBm5z3TVZPeh1dNKN7Wo26nklm2G49duvkIqJxTD1e9kVixykRInnn0Erap4UlPl1PKa5DkFP1MVO+QxduZQ8YwtgomkFqefPR2hNeez1bDmXPbdDVKpEGMhE7iTvwc/Seg+BW9FOM6/GyXI+5vFqBAAAAAKgrqx1gFjw6D07WMrSZqyNE531tFt6x8DSQdgsZWdca83FaUT9+WLlQeQF3XsmWu2f+z7ReJEypGWhBgXFIS/Q==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -597,10 +597,10 @@
                 <SSIS:Property SSIS:Name="Name">Package2</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">9</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">37</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{587B039F-C073-463B-9AA4-7FAC3B63A93B}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{7B9EAB82-7FF4-424D-8B6E-87601A65EA1E}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -789,12 +789,7 @@
     </Manifest>
   </DeploymentModelSpecificContent>
   <ControlFlowParts />
-  <Miscellaneous>
-    <ProjectItem>
-      <Name>ETL_Vuelos.dtsxsx</Name>
-      <FullPath>ETL_Vuelos.dtsxsx</FullPath>
-    </ProjectItem>
-  </Miscellaneous>
+  <Miscellaneous />
   <Configurations>
     <Configuration>
       <Name>Development</Name>
