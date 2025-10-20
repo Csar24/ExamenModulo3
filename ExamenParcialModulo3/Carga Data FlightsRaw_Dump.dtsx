@@ -1,21 +1,33 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="10/10/2025 10:28:45 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-K20S8TH"
   DTS:CreatorName="DESKTOP-K20S8TH\Csar"
-  DTS:DTSID="{0EE90185-E4A8-4E25-8439-C52A9A6787BE}"
+  DTS:DTSID="{49EE4136-22E5-46D0-86E0-5227790D34DC}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LastModifiedProductVersion="17.0.1008.3"
   DTS:LocaleID="1033"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="Carga Data FlightsRaw_Dump"
   DTS:PackageType="5"
-  DTS:VersionBuild="82"
-  DTS:VersionGUID="{226A9644-4536-43A7-AF86-3A1D20620EB6}">
+  DTS:VersionBuild="87"
+  DTS:VersionGUID="{75E68DD2-FAD5-49B3-81AB-AE872D41D749}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CM_OLEDB_ParaVolarDWH]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{f16da1ae-802a-40d7-b44e-0ef5a299b999}"
+      DTS:ObjectName="CM_OLEDB_ParaVolarDWH">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=ParaVolarDWH;Provider=MSOLEDBSQL.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{598C625A-0255-4B99-9811-5CE8D4A19D2D}(localdb)\MSSQLLocalDB.ParaVolarDWH;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[CN_SQL_ParaVolar]"
       DTS:CreationName="OLEDB"
@@ -29,6 +41,37 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
+  <DTS:PackageParameters>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="3"
+      DTS:DTSID="{7579B5DF-3C58-405F-B94F-BF8D53C49FE1}"
+      DTS:ObjectName="Parameter">
+      <DTS:Property
+        DTS:DataType="3"
+        DTS:Name="ParameterValue">0</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:Description="Esquema de data warehouse"
+      DTS:DTSID="{6C11963C-8772-458E-AC29-E8676232FA63}"
+      DTS:ObjectName="p_SchemaDw">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">dw</DTS:Property>
+    </DTS:PackageParameter>
+    <DTS:PackageParameter
+      DTS:CreationName=""
+      DTS:DataType="8"
+      DTS:Description="Esquema de staging"
+      DTS:DTSID="{405FC724-E470-4FDA-862C-6E172D26A9BC}"
+      DTS:ObjectName="p_SchemaStg">
+      <DTS:Property
+        DTS:DataType="8"
+        DTS:Name="ParameterValue">stg</DTS:Property>
+    </DTS:PackageParameter>
+  </DTS:PackageParameters>
   <DTS:Variables>
     <DTS:Variable
       DTS:CreationName=""
@@ -110,7 +153,7 @@
                       dataType="System.String"
                       description="The SQL command to be executed."
                       name="SqlCommand"
-                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=17.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
                     <property
                       dataType="System.Int32"
                       description="Specifies the column code page to use when code page information is unavailable from the data source."
